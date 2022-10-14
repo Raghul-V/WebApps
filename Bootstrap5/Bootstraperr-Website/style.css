@@ -1,0 +1,109 @@
+@media (min-width: 768px) {
+    .newsletter-input {
+        width: 55%;
+    }
+}
+
+@media (min-width: 992px) {
+    .newsletter-input {
+        width: 43.5%;
+    }
+}
+
+.course-card {
+    min-width: 260px;
+    /* max-width: 300px; */
+}
+
+.course-card i {
+    font-size: 60px;
+}
+
+@media (min-width: 520px) and (max-width: 991.9px) {
+    .learn-img-sizing {
+        width: 405px;
+    }
+}
+
+/* 
+.instructor-cards .row {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+*/
+
+.instructor-cards .card {
+    max-width: 350px;
+    /* width: 280px; */
+}
+
+/*
+.instructor-cards .socialmedia-links {
+    margin: auto auto 0;
+}
+*/
+
+.instructor-cards .socialmedia-links i {
+    /* margin: auto 5px; */
+    cursor: pointer;
+}
+
+.bi-facebook {
+    color: #3b5998;
+}
+
+.bi-linkedin {
+    color: #0a66c2;
+}
+
+.bi-twitter {
+    color: #00acee;
+}
+
+.bi-instagram::before {
+    background-image: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%,#285AEB 90%);
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.instructor-cards .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#backtotop-btn {
+    cursor: pointer;
+    bottom: 41px;
+    right: 35px;
+    filter: blur(.5px);
+    display: none;
+    z-index: 2;
+    isolation: isolate;
+    
+    background-image: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%,#285AEB 90%);
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 515px) {
+    #backtotop-btn {
+        bottom: 60px;
+        right: 30px;
+    }
+
+    .course-card {
+        min-width: 160px;
+    }
+}
+
+.map iframe {
+    min-height: 300px;
+}
+
