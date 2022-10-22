@@ -1,0 +1,278 @@
+/* ----- Header -> Cover Pic, Title Bar ----- */
+
+header {
+    background-color: var(--component-bg);
+}
+
+header .container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* ----- Cover Pic ----- */
+
+.cover-pic-container {
+    display: flex;
+    position: relative;
+}
+
+.cover-pic {
+    width: 100%;
+    aspect-ratio: 21/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+header button {
+    font-size: .9em;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+header button i {
+    margin-right: 5px;
+}
+
+.edit-cover-pic {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: #fff;
+}
+
+
+/* ----- Title Bar ----- */
+
+header .title-bar {
+    display: flex;
+    align-items: center;
+    padding-inline: 30px;
+    position: relative;
+    min-height: 90px;
+    color: var(--input-text);
+}
+
+header .title-bar .profile-img {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+header .title-bar .profile-img img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 4px solid var(--component-bg);
+}
+
+header .title-bar .profile-img i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 50%;
+    color: var(--input-text);
+    background-color: var(--input-bg);
+}
+
+header .title-bar .user-name {
+    margin-left: 170px;
+}
+
+header .title-bar .user-name h2 {
+    margin: 0;
+}
+
+header .title-bar .buttons {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header .title-bar .buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-story {
+    color: #fff;
+    background-color: var(--bg-blue);
+}
+
+.edit-profile {
+    color: var(--input-text);
+    background-color: var(--input-bg);
+}
+
+
+/* ----- Main Content ----- */
+
+main {
+    justify-content: center;
+    column-gap: 15px;
+    padding-inline: 25px;
+    top: 0px;
+}
+
+
+/* ----- Personal Details ----- */
+
+.personal-details {
+    position: sticky;
+    width: 400px;
+}
+
+.personal-details h3 {
+    margin: 0;
+}
+
+.personal-details .header {
+    margin-bottom: 20px;
+}
+
+.personal-details .photos .body, .personal-details .friends .body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.personal-details .friends .body {
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+.personal-details .friends .header {
+    flex-wrap: wrap;
+}
+
+.personal-details .friends .header .friends-count {
+    width: 100%;
+    display: block;
+}
+
+.personal-details .photos .body img {
+    width: 100%;
+}
+
+.personal-details .intro .body > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.personal-details .intro .body img {
+    height: 1.5em;
+    align-self: start;
+}
+
+.personal-details .friends .body img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* ----- Post Uploads ----- */
+
+.post-uploads {
+    width: 540px;
+}
+
+
+/* ----- Responsive Web Design ----- */
+
+@media (max-width: 1150px) {
+    header .container {
+        max-width: 100%;
+    }
+
+    .cover-pic {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 950px) {
+    main {
+        flex-wrap: wrap;
+    }
+    
+    .personal-details, .post-uploads {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .personal-details {
+        position: static;
+    }
+
+    .post-uploads {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 900px) {
+    header .title-bar {
+        flex-direction: column;
+    }
+
+    header .title-bar .user-name {
+        margin: 75px auto 0;
+    }
+
+    header .title-bar .buttons {
+        margin: 10px 0 20px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .edit-cover-pic span {
+        display: none;
+    }
+
+    .edit-cover-pic i {
+        margin: 0;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .cover-pic {
+        aspect-ratio: 21/10;
+    }
+}
+
+@media (max-width: 500px) {
+    header .title-bar .buttons {
+        width: 100%;
+    }
+
+    header .title-bar .buttons button {
+        flex-grow: 1;
+    }
+
+    main {
+        padding-inline: 0;
+    }
+
+    .dummy-height {
+        display: none;
+    }
+
+    .post-uploads {
+        margin-top: -10px;
+    }
+
+    .friends .body .hide {
+        display: none;
+    }
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Nicholson - Profile Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous">
+    <link rel="stylesheet" href="index-styles.css">
+    <link rel="stylesheet" href="profilepage-styles.css">
+    <script type="text/javascript" src="index-script.js" defer></script>
+    <script type="text/javascript" src="profilepage-script.js" defer></script>
+</head>
+<body>
+    <nav class="box-shadow">
+        <div class="nav-left">
+            <a href="index.html"><img src="imgs/logo.png" class="logo main-logo" alt=""></a>
+
+            <ul>
+                <li>
+                    <img src="imgs/notification.png" alt="">
+                </li>
+                <li>
+                    <img src="imgs/inbox.png" alt="">
+                </li>
+                <li>
+                    <img src="imgs/video.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-bar">
+                <label for="search-input" class="search-icon-container">
+                    <img src="imgs/search.png" class="search-icon" alt="">
+                </label>
+                <input type="text" id="search-input" class="search-input" placeholder="Search" autocomplete="off">
+            </div>
+
+            <div class="profile-pic-container online top" id="profile-pic-container">
+                <img src="imgs/profile-pic.png" class="profile-pic" alt="">
+            </div>
+
+            <div class="toggle-menu box-shadow" id="toggle-menu">
+                <div>
+                    <img src="imgs/profile-pic.png" class="icon" alt="">
+                    <div>
+                        <span>John Nicholson</span><br>
+                        <a href="profile.html" class="blue-text small">See your profile</a>
+                    </div>
+                    <div class="theme-toggle-container right" id="theme-toggle-container">
+                        <div class="theme-toggle-button"></div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="imgs/feedback.png" class="icon" alt="">
+                    <div>
+                        <span>Give Feedback</span><br>
+                        <span class="blue-text small">Help us to improve the new design</span>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="imgs/setting.png" class="icon" alt="">
+                    <span>Settings & Privacy</span>
+                    <img src="imgs/arrow.png" class="arrow right" alt="">
+                </div>
+                <div>
+                    <img src="imgs/help.png" class="icon" alt="">
+                    <span>Help & Support</span>
+                    <img src="imgs/arrow.png" class="arrow right" alt="">
+                </div>
+                <div>
+                    <img src="imgs/display.png" class="icon" alt="">
+                    <span>Display & Accessiblity</span>
+                    <img src="imgs/arrow.png" class="arrow right" alt="">
+                </div>
+                <div>
+                    <img src="imgs/logout.png" class="icon" alt="">
+                    <span>Logout</span>
+                    <img src="imgs/arrow.png" class="arrow right" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="box-shadow">
+        <div class="container">
+            <div class="cover-pic-container">
+                <img src="imgs/cover.png" class="cover-pic" alt="">
+                <button class="edit-cover-pic"><i class="fa-solid fa-camera"></i> <span>Edit Cover Photo</span></button>
+            </div>
+            <div class="title-bar">
+                <div class="profile-img">
+                    <img src="imgs/profile-pic.png" alt="">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <div class="user-name">
+                    <h2>John Nicholson</h2>
+                </div>
+                <div class="buttons">
+                    <button class="add-story"><i class="fa-sharp fa-solid fa-circle-plus"></i> Add to Story</button>
+                    <button class="edit-profile"><i class="fa-solid fa-pen"></i> Edit profile</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <div class="dummy-height"></div>
+            <div class="main-content personal-details">
+                <div class="intro">
+                    <div class="header">
+                        <h3>Intro</h3>
+                    </div>
+                    <div class="body">
+                        <div><img src="imgs/profile-job.png" alt=""> Worked at Microsoft</div>
+                        <div><img src="imgs/profile-job.png" alt=""> Worked at Google</div>
+                        <div><img src="imgs/profile-study.png" alt=""> Studied at University of Pennsylvania</div>
+                        <div><img src="imgs/profile-study.png" alt=""> Studied at Harvard University, Cambridge</div>
+                        <div><img src="imgs/profile-study.png" alt=""> Studied at University of Oklahoma</div>
+                        <div><img src="imgs/profile-home.png" alt=""> Lives in Seattle, Washington</div>
+                        <div><img src="imgs/profile-location.png" alt=""> From MA, USA</div>
+                    </div>
+                </div>
+                <div class="photos">
+                    <div class="header">
+                        <h3>Photos</h3>
+                        <span class="blue-text right">See All Photos</span>
+                    </div>
+                    <div class="body">
+                        <img src="imgs/photo1.png" alt="">
+                        <img src="imgs/photo2.png" alt="">
+                        <img src="imgs/photo3.png" alt="">
+                        <img src="imgs/photo4.png" alt="">
+                        <img src="imgs/photo5.png" alt="">
+                        <img src="imgs/photo6.png" alt="">
+                    </div>
+                </div>
+                <div class="friends">
+                    <div class="header">
+                        <h3>Friends</h3>
+                        <span class="blue-text right">See All Friends</span>
+                        <span class="friends-count">324 friends</span>
+                    </div>
+                    <div class="body small">
+                        <div>
+                            <img src="imgs/member-1.png" alt="">
+                            <span>Alison Misa</span>
+                        </div>
+                        <div>
+                            <img src="imgs/member-2.png" alt="">
+                            <span>Jackson Aston</span>
+                        </div>
+                        <div>
+                            <img src="imgs/member-3.png" alt="">
+                            <span>Samona Rose</span>
+                        </div>
+                        <div>
+                            <img src="imgs/member-4.png" alt="">
+                            <span>Liam Oliver</span>
+                        </div>
+                        <div>
+                            <img src="imgs/member-5.png" alt="">
+                            <span>Noah Carter</span>
+                        </div>
+                        <div>
+                            <img src="imgs/member-6.png" alt="">
+                            <span>Emma Jordan</span>
+                        </div>
+                        <div class="hide">
+                            <img src="imgs/member-7.png" alt="">
+                            <span>Robert Wilson</span>
+                        </div>
+                        <div class="hide">
+                            <img src="imgs/member-8.png" alt="">
+                            <span>Charlotte George</span>
+                        </div>
+                        <div class="hide">
+                            <img src="imgs/member-9.png" alt="">
+                            <span>Alen Paul</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content post-uploads">
+            <div class="upload-new-post">
+                <div class="header">
+                    <img src="imgs/profile-pic.png" class="profile-pic" alt="">
+                    <div>
+                        <p class="bold">John Nicholson</p>
+                        <span class="post-visibility small">
+                            Public <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </div>
+                </div>
+                <span class="textarea post-description" contenteditable></span>
+                <hr>
+                <div class="upload-types">
+                    <div class="upload-type">
+                        <img src="imgs/live-video.png" alt="">
+                        <span class="medium">Live Video</span>
+                    </div>
+                    <div class="upload-type">
+                        <img src="imgs/photo.png" alt="">
+                        <span class="medium">Photo/Video</span>
+                    </div>
+                    <div class="upload-type">
+                        <img src="imgs/feeling.png" alt="">
+                        <span class="medium">Feeling/Activity</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="header">
+                    <img src="imgs/profile-pic.png" class="profile-pic" alt="">
+                    <div>
+                        <p class="bold">John Nicholson</p>
+                        <p class="small">October 15 2022, 13:42 pm</p>
+                    </div>
+                    <img src="imgs/more.png" class="more right" alt="">
+                </div>
+                <span class="medium description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit inventore nihil dicta quis, deserunt ut!
+                </span>
+                <img src="imgs/feed-image-3.png" class="post-image" alt="">
+                <div class="feedback">
+                    <img src="imgs/like-blue.png" alt="">
+                    <span>132</span>
+                    <img src="imgs/comments.png" alt="">
+                    <span>42</span>
+                    <img src="imgs/share.png" alt="">
+                    <span>23</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="header">
+                    <img src="imgs/profile-pic.png" class="profile-pic" alt="">
+                    <div>
+                        <p class="bold">John Nicholson</p>
+                        <p class="small">August 24 2022, 21:23 pm</p>
+                    </div>
+                    <img src="imgs/more.png" class="more right" alt="">
+                </div>
+                <span class="medium description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi temporibus fuga illum exercitationem dicta expedita, saepe harum, excepturi quaerat, vitae modi quidem consequuntur debitis reiciendis.
+                </span>
+                <img src="imgs/feed-image-1.png" class="post-image" alt="">
+                <div class="feedback">
+                    <img src="imgs/like.png" alt="">
+                    <span>312</span>
+                    <img src="imgs/comments.png" alt="">
+                    <span>64</span>
+                    <img src="imgs/share.png" alt="">
+                    <span>12</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="header">
+                    <img src="imgs/profile-pic.png" class="profile-pic" alt="">
+                    <div>
+                        <p class="bold">John Nicholson</p>
+                        <p class="small">July 13 2022, 07:56 am</p>
+                    </div>
+                    <img src="imgs/more.png" class="more right" alt="">
+                </div>
+                <span class="medium description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum ut soluta cum? Sit autem delectus ducimus, officiis dolor sapiente.
+                </span>
+                <img src="imgs/feed-image-5.png" class="post-image" alt="">
+                <div class="feedback">
+                    <img src="imgs/like.png" alt="">
+                    <span>68</span>
+                    <img src="imgs/comments.png" alt="">
+                    <span>21</span>
+                    <img src="imgs/share.png" alt="">
+                    <span>8</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="header">
+                    <img src="imgs/profile-pic.png" class="profile-pic" alt="">
+                    <div>
+                        <p class="bold">John Nicholson</p>
+                        <p class="small">June 05 2022, 11:34 am</p>
+                    </div>
+                    <img src="imgs/more.png" class="more right" alt="">
+                </div>
+                <span class="medium description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dicta nulla porro dignissimos obcaecati neque.
+                </span>
+                <img src="imgs/feed-image-4.png" class="post-image" alt="">
+                <div class="feedback">
+                    <img src="imgs/like-blue.png" alt="">
+                    <span>192</span>
+                    <img src="imgs/comments.png" alt="">
+                    <span>55</span>
+                    <img src="imgs/share.png" alt="">
+                    <span>17</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="header">
+                    <img src="imgs/profile-pic.png" class="profile-pic" alt="">
+                    <div>
+                        <p class="bold">John Nicholson</p>
+                        <p class="small">May 28 2022, 22:46 pm</p>
+                    </div>
+                    <img src="imgs/more.png" class="more right" alt="">
+                </div>
+                <span class="medium description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ullam similique doloremque asperiores facilis libero quia a quidem sequi voluptates.
+                </span>
+                <img src="imgs/feed-image-2.png" class="post-image" alt="">
+                <div class="feedback">
+                    <img src="imgs/like.png" alt="">
+                    <span>68</span>
+                    <img src="imgs/comments.png" alt="">
+                    <span>34</span>
+                    <img src="imgs/share.png" alt="">
+                    <span>11</span>
+                </div>
+            </div>
+            
+            <button class="load-more medium">Load More</button>
+            <p class="medium copyright">Copyright &copy; 2022 - Made with ❤️ by SocialBook</p>
+        </div>
+    </main>
+</body>
+</html>
