@@ -1,0 +1,144 @@
+:root {
+    --main-bg: #ff4c68;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.pink-bg {
+    background-color: var(--main-bg);
+}
+
+/* ----- Header Section ----- */
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.3rem;
+}
+
+.lg-text {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.iphone-img {
+    transform: rotate(25deg);
+    width: 65%;
+    right: 25%;
+}
+
+/* ----- Features Section ----- */
+
+#features i {
+    font-size: 3rem;
+    color: #ff8172;
+    transition: .3s;
+}
+
+#features i:hover {
+    color: var(--main-bg);
+    scale: 1.1;
+}
+
+#features h3 {
+    font-size: 1.5rem;
+}
+
+#features p {
+    color: #909090;
+}
+
+/* ----- Testimonials Section ----- */
+
+#testimonials-carousel img {
+    width: 100px;
+}
+
+#testimonials-carousel .carousel-item {
+    padding: 5% 15% 0;
+}
+
+#press {
+    gap: 20px 6%;
+}
+
+#press img {
+    width: 20%;
+    min-width: 140px;
+}
+
+/* ----- Responsive Design ----- */
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.9rem;
+    }
+
+    .lg-text {
+        font-size: 2.7rem;
+    }
+
+    .social-icons {
+        font-size: 1.25rem !important;
+    }
+
+    .copyright {
+        font-size: 1rem !important;
+    }
+
+    #pricing .card {
+        max-width: 350px;
+    }
+
+    #pricing .card-body button {
+        width: 60% !important;
+        margin-bottom: 15px;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .lg-text {
+        font-size: 2rem;
+    }
+
+    .btn-lg {
+        font-size: 1rem;
+    }
+
+    #features i {
+        font-size: 2.5rem;
+    }
+
+    #features h3, #testimonials-carousel h2.fs-1 {
+        font-size: 1.3rem !important;
+    }
+
+    #features p {
+        font-size: .95rem;
+    }
+
+    #testimonials-carousel img {
+        width: 60px;
+    }
+
+    #press img {
+        min-width: 100px;
+    }
+}
+
+@media (min-width: 450px) {
+    .apple-download-btn {
+        margin-right: 30px;
+    }
+}
