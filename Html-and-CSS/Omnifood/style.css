@@ -1,0 +1,1513 @@
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(50, 50, 50);
+    background-color: rgb(250, 250, 250);
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgb(90, 90, 90);
+}
+
+a {
+    text-decoration: none;
+    color:rgb(50, 50, 50);
+    transition: .3s;
+}
+
+a:focus {
+    box-shadow: 0 0 0 .4em rgba(230, 125, 34, 0.5);
+}
+
+
+
+
+
+/* ----- Navbar ----- */
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 35px 50px;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.orange-bg {
+    background-color: rgb(253, 242, 233);
+}
+
+nav.fixed {
+    position: fixed;
+    background-color: #fffffff6;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.omnifood-logo {
+    width: 165px;
+}
+
+nav i {
+    cursor: pointer;
+}
+
+nav i.fa-bars {
+    display: none;
+    margin: 0 0 0 auto;
+    font-size: 25px;
+}
+
+nav i.fa-xmark {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 45px;
+    font-size: 28px;
+}
+
+nav ul {
+    margin: 0 0 0 auto;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-inline: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav ul li:first-child {
+    margin: 0;
+}
+
+nav ul li a:not(.btn):hover {
+    color: #d66e12;
+}
+
+.btn {
+    padding: .4em 1.2em;
+    border-radius: 7px;
+    font-weight: 500;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-btn {
+    background-color: #e67e22;
+    border: 3.5px solid #e67e22;
+    color: white
+}
+
+.primary-btn:hover {
+    background-color: #d66e12;
+    border-color: #d66e12;
+}
+
+
+
+
+
+/* ----- Navbar ----- */
+
+.intro {
+    display: flex;
+    align-items: center;
+    padding: 50px 140px 100px;
+    gap: 90px;
+    margin-top: 95px;
+}
+
+.intro h1 {
+    font-size: 51px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.intro p {
+    margin-bottom: 60px;
+}
+
+.intro .buttons {
+    display: flex;
+    margin-bottom: 100px;
+    gap: 15px;
+    align-items: center;
+}
+
+.intro .learn-more-btn {
+    background-color: white;
+    color: rgb(90, 90, 90);
+    border: 3.5px solid white;
+}
+
+.intro .learn-more-btn i {
+    font-size: .8em;
+    margin-left: 5px;
+}
+
+.intro .learn-more-btn:hover {
+    background-color: transparent;
+}
+
+.intro .learn-more-btn:focus {
+    transition-delay: 1s;
+}
+
+.buttons .btn, .plan .btn {
+    padding: .6em 1.5em;
+    font-size: 20px;
+}
+
+.customers-and-highlight {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.customers-and-highlight .customer-imgs {
+    display: flex;
+}
+
+.customers-and-highlight .customer-imgs img {
+    width: 41px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.customers-and-highlight .customer-imgs img:nth-of-type(2) {
+    transform: translateX(-30%);
+}
+.customers-and-highlight .customer-imgs img:nth-of-type(3) {
+    transform: translateX(-60%);
+}
+.customers-and-highlight .customer-imgs img:nth-of-type(4) {
+    transform: translateX(-90%);
+}
+.customers-and-highlight .customer-imgs img:nth-of-type(5) {
+    transform: translateX(-120%);
+}
+.customers-and-highlight .customer-imgs img:nth-of-type(6) {
+    transform: translateX(-150%);
+}
+
+.customers-and-highlight .highlight {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(90, 90, 90);
+    position: absolute;
+    left: 230px;
+}
+
+.orange-text {
+    color: #d66e12;
+}
+
+.intro > img {
+    width: 570px;
+}
+
+
+
+
+
+/* ----- Featured-in ----- */
+
+.small {
+    font-size: 18px;
+}
+
+.smaller {
+    font-size: 15px;
+}
+
+.featured-in {
+    filter: brightness(0);
+    opacity: 50%;
+    padding: 40px 95px 80px;
+}
+
+.featured-in span {
+    display: block;
+    font-size: 14.5px;
+    letter-spacing: .5px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.featured-in div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+.featured-in img {
+    height: 32px;
+}
+
+
+
+
+
+/* ----- How it works ----- */
+
+#how-works {
+    padding: 40px 30px 20px;
+}
+
+.section-title {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: .06em;
+}
+
+.section-desc {
+    margin: 15px auto 100px;
+}
+
+#how-works h1 {
+    margin-bottom: 90px;
+}
+
+#how-works h2 {
+    margin: 10px 0 35px;
+}
+
+#how-works .container {
+    max-width: 1130px;
+    margin: auto;
+}
+
+#how-works .step {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#how-works .app-img-cont {
+    position: relative;
+    text-align: center;
+}
+
+#how-works .app-img-cont img {
+    width: 35%;
+}
+
+#how-works .app-img-cont::before, #how-works .app-img-cont::after {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+#how-works .app-img-cont::before {
+    width: 60%;
+    height: 80%;
+    background-color: #fdf2e9;
+}
+
+#how-works .app-img-cont::after {
+    width: 45%;
+    height: 60%;
+    background-color: #fae5d3;
+}
+
+#how-works .step-num {
+    font-size: 5em;
+    font-weight: 600;
+    margin: 0;
+    color: #ccc;
+}
+
+
+
+
+
+/* ----- Meals ----- */
+
+#meals {
+    max-width: 1130px;
+    margin: 50px auto;
+    text-align: center;
+    padding-inline: 30px;
+}
+
+#meals .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 70px;
+}
+
+#meals .grid > div {
+    text-align: left;
+}
+
+#meals .grid .card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition-duration: .5s;
+    transition-delay: .05s;
+    box-shadow: 0px 20px 25px #0001;
+}
+
+#meals .grid .card:hover {
+    transform: translateY(-15px);
+}
+
+#meals .grid .card img {
+    width: 100%;
+}
+
+#meals .grid .card .content {
+    padding: 30px 40px;
+}
+
+.vegetarian {
+    background-color: #51cf66;
+}
+
+.vegan {
+    background-color: #94d82d;
+}
+
+.paleo {
+    background-color: #ffd43b;
+}
+
+.diet-types span {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+#meals .grid h2, #meals .grid h3 {
+    margin: 15px 0 30px;
+}
+
+#meals .grid h2 {
+    margin-top: 0px;
+}
+
+#meals .grid .content > span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 22px;
+    color: #555;
+}
+
+#meals .grid .content i {
+    display: inline-block;
+    width: 1em;
+    font-size: 1.2em;
+    text-align: center;
+    color: #e67e22;
+    margin-right: 15px;
+}
+
+#meals .grid .content .number {
+    font-weight: 500;
+}
+
+#meals a.see-all {
+    display: inline-block;
+    margin: 50px auto;
+    font-size: 18px;
+}
+
+#meals a.see-all::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e67e22;
+    margin-top: 3px;
+    transition: .3s;
+}
+
+#meals a.see-all:hover::after {
+    opacity: 0;
+}
+
+
+
+
+
+/* ----- Testimonials ----- */
+
+#testimonials .content {
+    margin: 20px 0;
+}
+
+#testimonials .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 110px;
+    padding: 40px 20px 40px 90px;
+    align-items: center;
+}
+
+#testimonials .grid .customer-reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 90px;
+}
+
+#testimonials .grid .customer-reviews img {
+    border-radius: 50%;
+    width: 66px;
+}
+
+#testimonials .reviewer-name {
+    color: rgb(120, 120, 120);
+}
+
+#testimonials .grid .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+#testimonials .grid .gallery-img {
+    overflow: hidden;
+}
+
+#testimonials .grid .gallery-img img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+#testimonials .grid .gallery-img:hover img {
+    scale: 1.1;
+}
+
+
+
+
+
+/* ----- Pricing ----- */
+
+#pricing {
+    padding: 80px 35px;
+}
+
+#pricing .container {
+    max-width: 1130px;
+    margin: auto;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.pricing-plans .plan {
+    padding: 40px 55px 60px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-plans .plan.starter {
+    border: 2px solid rgb(255, 230, 220);
+}
+
+.plan .title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.plan .price {
+    display: block;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 30px 0 10px;
+}
+
+.plan .price-num {
+    font-size: 63px;
+    margin-left: 10px;
+}
+
+.plan .price + p {
+    margin: 0;
+}
+
+.pricing-plans .benefits {
+    text-align: left;
+    margin: 40px 20px 40px 0;
+}
+
+.plan i {
+    font-size: 1.3em;
+    margin-right: 13px;
+    color: #e67e22;
+}
+
+.pricing-plans .btn {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.pricing-plans .plan.best::before {
+    content: 'BEST VALUE';
+    position: absolute;
+    font-weight: 700;
+    font-size: 13.5px;
+    top: 30px;
+    right: -15%;
+    width: 50%;
+    padding: .6em;
+    background-color: #ffd43b;
+    transform: rotate(45deg);
+}
+
+#pricing .container > p {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.very-small {
+    font-size: .95em;
+}
+
+#pricing .includes {
+    display: flex;
+    gap: 55px;
+}
+
+#pricing .includes i {
+    background-color: rgb(253, 242, 233);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    color: #e67e22;
+}
+
+
+
+
+
+/* ----- Sign Up ----- */
+
+#sign-up {
+    padding: 0px 30px 140px;
+}
+
+#sign-up h1 {
+    margin: 0;
+}
+
+#sign-up p {
+    color: #333;
+    margin: 30px auto;
+}
+
+#sign-up .container {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px #0003;
+    max-width: 1130px;
+    margin: auto;
+}
+
+.cta {
+    background-image: linear-gradient(135deg, #ff9e4f, #e67e22);
+    padding: 50px 60px;
+}
+
+.cta form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.cta form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta form label {
+    margin: 25px 0px 10px;
+    font-weight: 500;
+}
+
+.cta form input, .cta form select, .cta .sign-up-btn button {
+    font-family: 'Rubik', sans-serif;
+    font-size: 19px;
+    border-radius: 8px;
+    border: none;
+    padding: .6em .7em;
+    outline: none;
+    opacity: .9;
+    transition: .3s;
+}
+
+.cta form input:focus, .cta form select:focus, .cta .sign-up-btn button:active {
+    box-shadow: 0px 0px 0px 5px #fffa;
+}
+
+.cta .sign-up-btn button {
+    margin-top: auto;
+    font-weight: 600;
+    color: white;
+    background-color: #000c;
+    cursor: pointer;
+}
+
+.cta .sign-up-btn button:hover {
+    color: #333;
+    background-color: white;
+}
+
+#sign-up .eating-img-cont {
+    width: 60%;
+    background-image: linear-gradient(#e67e2255, #e67e2255), url(imgs/eating.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+/* ----- Footer ----- */
+
+footer {
+    padding: 100px 30px;
+    border-top: 1px solid #dfdfdf;
+    color: #888;
+    font-size: 16px;
+    letter-spacing: .03em;
+}
+
+footer a {
+    color: #888;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: #555;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer .container div:first-child {
+    max-width: 530px;
+}
+
+footer .container > div {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-headings {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 15px;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+.social-and-copyright {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links {
+    margin-top: 40px;
+    font-size: 22px;
+    display: flex;
+    gap: 25px;
+}
+
+.copyright {
+    margin-top: auto;
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+
+
+
+/* ----- Responsive Web Design ----- */
+
+@media (max-width: 1300px) {
+    /* ----- Navbar ----- */
+    .intro {
+        padding-inline: 70px;
+    }
+
+    .intro h1 {
+        font-size: 43px;
+    }
+
+    .intro > img {
+        width: 520px;
+    }
+
+
+    /* ----- Testimonials ----- */
+    #testimonials .grid .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 1220px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2, h3 {
+        font-size: 21.5px;
+    }
+
+    p {
+        font-size: 18.1px;
+    }
+
+    .small {
+        font-size: 16px;
+    }
+
+
+    /* ----- Navbar ----- */
+    nav {
+        padding-inline: 30px;
+    }
+
+    .omnifood-logo {
+        width: 150px;
+    }
+
+    nav ul li {
+        font-size: 16.5px;
+        margin-inline: 10px;
+    }
+
+
+    /* ----- Header ----- */
+    .intro {
+        padding-inline: 30px;
+        padding-top: 25px;
+        gap: 30px;
+        margin-inline: auto;
+        max-width: 1020px;
+    }
+
+    .intro h1 {
+        font-size: 39px;
+    }
+
+    .intro > div, .intro > img {
+        width: 50%;
+    }
+
+    .intro .buttons {
+        margin-bottom: 80px;
+    }
+        
+    .buttons .btn, .plan .btn {
+        padding: .4em 1.2em;
+    }
+
+    .buttons .btn, .plan .btn {
+        font-size: 19px;
+    }
+
+    .customers-and-highlight .customer-imgs img {
+        width: 35px;
+    }
+
+    .customers-and-highlight .highlight {
+        font-size: 16px;
+        left: 200px;
+    }
+    
+
+    /* ----- Featured in ----- */
+    .featured-in span {
+        font-size: 13px;
+        letter-spacing: .5px;
+    }
+
+    .featured-in div {
+        max-width: 1000px;
+    }
+    
+    .featured-in img {
+        height: 27px;
+    }
+
+
+    /* ----- How it works ----- */
+    #how-works .step {
+        column-gap: 30px;
+    }
+
+    .section-title {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .section-desc {
+        margin-bottom: 80px;
+    }
+
+
+    /* ----- Testimonials ----- */
+    #testimonials .grid {
+        gap: 50px;
+        padding-left: 30px;
+    }
+
+    #testimonials .grid .customer-reviews {
+        column-gap: 75px;
+    }
+
+    #testimonials .grid .customer-reviews img {
+        width: 58px;
+    }
+
+    #testimonials .reviewer-name {
+        font-size: 14.5px;
+    }
+
+
+    /* ----- Pricing ----- */
+    .plan .title {
+        font-size: 18px;
+    }
+
+    .plan .price {
+        font-size: 27px;
+    }
+
+    .plan .price-num {
+        font-size: 56px;
+    }
+
+    .pricing-plans .benefits {
+        margin-top: 30px;
+    }
+
+    .pricing-plans .plan.best::before {
+        font-size: 12.5px;
+    }
+
+
+    /* ----- Meals ----- */
+    #meals {
+        max-width: 1020px;
+    }
+
+    #meals .grid {
+        column-gap: 45px;
+    }
+
+    #meals .grid .card .content {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #meals .grid .content > span {
+        font-size: 16.5px;
+        margin-bottom: 19px;
+    }
+
+    .diet-types span {
+        font-size: 11px;
+        padding: 3px 7px;
+    }
+
+    #meals a.see-all {
+        font-size: 16.5px;
+    }
+
+
+    /* ----- Sign Up ----- */
+    #sign-up .container {
+        max-width: 1020px;
+    }
+
+    .cta form input, .cta form select, .cta .sign-up-btn button {
+        font-size: 16px;
+    }
+
+
+    /* ----- Footer ----- */
+    footer {
+        font-size: 14px;
+    }
+
+    .footer-headings {
+        font-size: 16px;
+    }
+
+    footer .container, footer .container > div {
+        gap: 40px;
+    }
+
+    footer .container > div:last-child {
+        min-width: 420px;
+    }
+
+    footer .container {
+        max-width: 1020px;
+    }
+}
+
+@media (max-width: 1100px) {
+    /* ----- Featured in ----- */
+    .featured-in div {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 930px) {
+    h1 {
+        font-size: 29px;
+    }
+    
+    h2, h3 {
+        font-size: 19px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .small {
+        font-size: 14.8px;
+    }
+
+    .very-small {
+        font-size: .8em;
+    }
+
+
+    /* ----- Navbar ----- */
+    nav {
+        padding-inline: 25px;
+    }
+
+    .omnifood-logo {
+        width: 130px;
+    }
+
+    nav i.fa-bars {
+        display: block;
+    }
+
+    nav i.fa-xmark {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 1;
+        backdrop-filter: blur(10px);
+        transform: translateX(100%);
+        transition: 1s;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px auto;
+        font-size: 23px;
+    }
+
+
+    /* ----- Header ----- */
+    .intro {
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .intro > div {
+        width: 80%;
+        text-align: center;
+    }
+        
+    .intro .buttons {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .buttons .btn, .plan .btn {
+        font-size: 17px;
+    }
+
+    .customers-and-highlight {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .intro > img {
+        width: 50%;
+    }
+
+
+    /* ----- How it works ----- */
+    #how-works .step-num {
+        font-size: 3.7em;
+    }
+
+    .section-title {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+
+    /* ----- Testimonials ----- */
+    #testimonials .grid {
+        grid-template-columns: 1fr;
+        padding: 50px 14px 14px;
+    }
+
+    #testimonials .content {
+        padding-inline: 16px;
+    }
+
+    #testimonials .grid .customer-reviews {
+        gap: 35px 55px;
+    }
+
+    #testimonials .grid .customer-reviews img {
+        width: 56px;
+    }
+
+    #testimonials .reviewer-name {
+        font-size: 13px;
+    }
+
+    #testimonials .grid .gallery {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 14px;
+    }
+
+
+    /* ----- Pricing ----- */
+    .pricing-plans {
+        gap: 40px;
+    }
+
+    .pricing-plans .plan {
+        padding: 40px 40px 50px;
+    }
+
+    .plan .title {
+        font-size: 16px;
+    }
+
+    .plan .price {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .plan .price-num {
+        font-size: 50px;
+    }
+
+    .pricing-plans .plan.best::before {
+        font-size: 11.5px;
+    }
+
+    .pricing-plans .benefits {
+        margin-bottom: 20px;
+    }
+
+
+    /* ----- Meals ----- */
+    #meals .grid {
+        column-gap: 40px;
+    }
+
+    .diet-types span {
+        font-size: 9.5px;
+    }
+
+    #meals .grid .card .content {
+        padding: 15px 30px;
+    }
+
+    #meals .grid .content > span {
+        font-size: 14.5px;
+        margin-bottom: 17px;
+    }
+
+    #meals a.see-all {
+        font-size: 14.5px;
+    }
+
+
+    /* ----- Pricing ----- */
+    #pricing .includes {
+        gap: 40px;
+    }
+
+    #pricing .includes i {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+
+    /* ----- Sign Up ----- */
+    #sign-up p {
+        margin-bottom: 20px;
+    }
+
+    .cta form {
+        grid-template-columns: 1fr;
+    }
+
+    .cta .sign-up-btn button {
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+
+    #sign-up .eating-img-cont {
+        width: 100%;
+    }
+
+    .cta form input, .cta form select, .cta .sign-up-btn button {
+        font-size: 14.5px;
+    }
+
+
+    /* ----- Footer ----- */
+    footer {
+        font-size: 12.5px;
+    }
+
+    .footer-headings {
+        font-size: 15px;
+    }
+
+    footer .container, footer .container > div {
+        gap: 40px;
+    }
+
+    footer .container > div:last-child {
+        min-width: 420px;
+    }
+
+    footer .container {
+        max-width: 1020px;
+    }
+
+    .social-links {
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 850px) {
+    /* ----- Footer ----- */
+    footer .container div:first-child {
+        max-width: 300px;
+    }
+
+    footer .container > div:last-child {
+        min-width: unset;
+    }
+}
+
+@media (max-width: 780px) {
+    /* ----- Meals ----- */
+    #meals .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 80px;
+    }
+
+    #meals .grid .card {
+        width: 46%;
+    }
+
+    #meals .grid .works-with {
+        min-width: 190px;
+    }
+}
+
+@media (max-width: 750px) {
+    /* ----- Navbar ----- */
+    .intro > img {
+        width: 65%;
+    }
+
+
+    /* ----- Featured in ----- */
+    .featured-in div {
+        gap: 30px;
+    }
+
+    .featured-in span {
+        font-size: 12px;
+    }
+    
+    .featured-in img {
+        height: 20px;
+    }
+
+
+    /* ----- Pricing ----- */
+    .pricing-plans .plan {
+        padding: 30px 30px 40px;
+    }
+
+    .pricing-plans .plan.best::before {
+        top: 27px;
+    }
+
+    #pricing .includes {
+        flex-wrap: wrap;
+    }
+
+    #pricing .includes > div {
+        width: 45%;
+    }
+
+
+    /* ----- Sign Up ----- */
+    #sign-up .eating-img-cont {
+        width: 150%;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-desc {
+        margin-bottom: 40px;
+    }
+
+
+    /* ----- Footer ----- */
+    footer .container {
+        flex-direction: column-reverse;
+    }
+
+    footer .container > div {
+        justify-content: space-between;
+    }
+
+    footer .container div:first-child {
+        max-width: unset;
+    }
+}
+
+@media (max-width: 650px) {
+    /* ----- Pricing ----- */
+    .pricing-plans {
+        flex-wrap: wrap;
+    }
+
+    .plan {
+        box-sizing: border-box;
+        width: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* ----- Meals ----- */
+    #meals .grid .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+
+    /* ----- Testimonials ----- */
+    #testimonials .grid .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+
+    /* ----- Sign Up ----- */
+    #sign-up .container {
+        flex-direction: column-reverse;
+    }
+
+    #sign-up .eating-img-cont {
+        height: 350px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 27px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+
+    /* ----- Navbar ----- */
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro > div {
+        width: 90%;
+    }
+
+    .customers-and-highlight {
+        flex-direction: column;
+        margin-top: -10px;
+        margin-bottom: 70px;
+    }
+
+    .customers-and-highlight .customer-imgs {
+        transform: translateX(12.5%);
+    }
+
+    .customers-and-highlight .highlight {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 60px;
+    }
+
+    .intro > img {
+        display: none;
+    }
+
+
+    /* ----- How it works ----- */
+    #how-works .step {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    #how-works .step:nth-child(2n+1) {
+        flex-direction: column-reverse;
+    }
+
+    #how-works .app-img-cont img {
+        width: 42%;
+    }
+
+    #how-works .app-img-cont::before {
+        width: 75%;
+        height: 85%;
+    }
+
+    #how-works .app-img-cont::after {
+        width: 55%;
+        height: 65%;
+    }
+}
+
+@media (max-width: 500px) {
+    /* ----- Testimonials ----- */
+    #testimonials .grid .customer-reviews {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ----- Pricing ----- */
+    #pricing .includes > div {
+        width: auto;
+    }
+
+
+    /* ----- Sign Up ----- */
+    #sign-up .eating-img-cont {
+        height: 260px;
+    }
+
+    .cta {
+        padding-inline: 10%;
+    }
+}
+
